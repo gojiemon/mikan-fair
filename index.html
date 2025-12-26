@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>太陽と汗と、みかんと私｜こたつファームさんのみかんフェア</title>
+  <meta name="description" content="10日間の収穫アルバイトで学んだ、みかんの裏側の物語。こたつファームさんのみかんフェアのご案内。" />
+
+  <!-- Open Graph (SNS共有用) -->
+  <meta property="og:title" content="太陽と汗と、みかんと私｜こたつファームさんのみかんフェア" />
+  <meta property="og:description" content="10日間の収穫アルバイトで学んだ、みかんの裏側の物語。こたつファームさんのみかんフェアのご案内。" />
+  <meta property="og:type" content="article" />
+  <!-- og:image は、画像URLに差し替えてください -->
+  <!-- <meta property="og:image" content="https://example.com/images/mikan_fair_og.jpg" /> -->
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --card:#f9fafb;
+      --line:#e5e7eb;
+      --accent:#f59e0b;
+      --max: 880px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Kaku Gothic ProN",
+                   "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.85;
+      letter-spacing: .02em;
+    }
+    a{color:inherit}
+    header{
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(245,158,11,.16), rgba(245,158,11,0));
+    }
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding: 28px 18px;
+    }
+    .kicker{
+      color:var(--muted);
+      font-size:14px;
+      margin: 0 0 8px;
+    }
+    h1{
+      font-size: clamp(26px, 4.4vw, 40px);
+      line-height:1.25;
+      margin: 0 0 10px;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0;
+      font-size:15px;
+    }
+    .hero{
+      margin-top:18px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow: 0 10px 30px rgba(17,24,39,.06);
+    }
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
+      background:#f3f4f6;
+    }
+    .hero .cap{
+      padding: 12px 14px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+    }
+    main{padding: 22px 0 10px;}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding: 18px 18px;
+      margin: 18px 0;
+    }
+    h2{
+      font-size: 20px;
+      margin: 18px 0 10px;
+    }
+    h3{
+      font-size: 16px;
+      margin: 18px 0 8px;
+      color: var(--text);
+    }
+    .lead{
+      font-size: 16px;
+      margin: 10px 0 0;
+    }
+    .list{
+      margin: 10px 0 0;
+      padding-left: 1.1em;
+    }
+    .badge{
+      display:inline-block;
+      background: rgba(245,158,11,.14);
+      border: 1px solid rgba(245,158,11,.28);
+      color:#92400e;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+    .cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px 16px;
+      border-radius:18px;
+      border:1px solid rgba(245,158,11,.35);
+      background: rgba(245,158,11,.10);
+      margin: 22px 0;
+    }
+    .cta strong{font-size:16px}
+    .cta .btn{
+      display:inline-block;
+      text-decoration:none;
+      background: var(--accent);
+      color:#111827;
+      font-weight:800;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 8px 18px rgba(245,158,11,.25);
+      white-space:nowrap;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size: 12px;
+      padding: 18px 0 40px;
+    }
+    .note{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    @media (prefers-reduced-motion:no-preference){
+      .btn{transition: transform .08s ease}
+      .btn:hover{transform: translateY(-1px)}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <p class="kicker"><span class="badge">みかんフェア</span>　こたつファームさん</p>
+      <h1>太陽と汗と、みかんと私<br>〜10日間の収穫アルバイトで学んだこと〜</h1>
+      <p class="sub">畑の現場で見て、触れて、食べて知った「みかんの裏側」。その体験の延長として、こたつファームさんのみかんフェアを開催します。</p>
+
+      <div class="hero" role="img" aria-label="みかんフェアの写真">
+        <!-- 画像差し替え方法：
+             1) このHTMLと同じフォルダに画像を置く場合：src="mikan_fair.jpg"
+             2) サーバにアップした画像URLを使う場合：src="https://.../mikan_fair.jpg"
+        -->
+        <img src="mikan_fair.jpg" alt="こたつファームさんのみかん（写真を差し替えてください）">
+        <div class="cap">※画像は差し替え可能です（上の img の src を変更してください）。</div>
+      </div>
+
+      <div class="cta" id="fair">
+        <div>
+          <strong>こたつファームさんのみかんフェア 開催中</strong><br>
+          <span class="note">期間・メニュー内容・価格・提供店舗などは、下の「フェア情報」欄に入力してご利用ください。</span>
+        </div>
+        <!-- ボタンのリンク先（例：予約/お知らせページ）を入れてください -->
+        <a class="btn" href="#info">フェア情報を見る</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article>
+      <section class="card">
+        <h2>導入：楽園のイメージと、最初の洗礼</h2>
+        <p class="lead">
+          暖かい太陽の光を浴びながら、甘い香りに包まれてみかんを収穫する。
+          「みかん狩り」と聞いて、多くの人が思い浮かべるのは、そんなのどかな光景ではないでしょうか。私も、まさにそう思っていました。
+        </p>
+        <p>
+          けれど、そのイメージはアルバイト初日、あっさりと崩れました。
+          想像以上に、体にくる仕事だったのです。
+        </p>
+        <p>
+          この文章は、普段お店でみかんを手に取ってくださる方に、その裏側を少しだけ知ってもらえたらと思って書きました。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>1. プロの現場は、想像以上に厳しい</h2>
+        <p>
+          私を待っていたのは、観光とはまったく別物の「仕事としての農業」でした。
+        </p>
+        <p>
+          まず驚いたのは、山のだんだん畑の急斜面です。足場は不安定で、ただ立っているだけでも神経を使う。
+          目の前のみかんに集中していると、足元の感覚が薄れ、体がずるっと滑ってしまうこともありました。
+          自分の体を支えるだけで、体力がじわじわと削られていきます。
+        </p>
+        <p>
+          そして何より圧倒されたのが、農家さんたちの作業スピードでした。
+          私が一つ収穫する間に、彼らは迷いなく次、また次へと手を伸ばしていく。
+          その差を目の当たりにして、焦りと尊敬が入り混じり、ただ必死に手を動かす日々が続きました。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>2. 限界を超えた先に残った感覚</h2>
+        <p>
+          毎日くたくたで、夜は食事を終えるとそのまま動けなくなることもしばしばありました。
+          あまりの疲労に、お風呂に入る気力すら残らず、気づけばそのまま眠ってしまった日が、3日もありました。
+          今思えば少し笑ってしまいますが、そのときは本気で限界でした。
+        </p>
+        <p>
+          それでも、続けられたのには理由があります。
+          休憩中に食べた、採れたてのみかん。
+          農家さんが「これが一番うまい」と選んでくれた完熟みかんは、驚くほど甘く、瑞々しく、汗をかいた体にすっと染み込みました。
+          ただ甘いだけではなく、疲れた体が本能的に欲している味でした。
+        </p>
+        <p>
+          また、休憩中にふと顔を上げたときに見える山の景色。
+          作業中は目の前のみかんで精一杯なのに、ほんの短い時間だけ現れる景色は、息をのむほど美しく、
+          張りつめていた気持ちを静かにほどいてくれました。
+        </p>
+        <p>
+          一本の木を、仲間と一緒にすべて収穫し終えたときの達成感も忘れられません。
+          「この木、終わったね」という何気ない一言に、確かな手応えがありました。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>3. 人の温かさが、仕事を支えてくれた</h2>
+        <p>
+          現場で出会った農家さんたちは、とても温かい人たちでした。
+        </p>
+        <p>
+          仕事では厳しく、虫食いや傷のあるみかんは容赦なく選別する。
+          けれど私が虫食いのみかんを食べようとすると、
+          「そんなの食べなくていいよ。こっちの方が美味しい」と、きちんと完熟したみかんを勧めてくれる。
+          その何気ない気遣いが、張りつめた気持ちを何度も救ってくれました。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>結び：体験の先に、届けたい味がある</h2>
+        <p>
+          この10日間は、単なるアルバイトではありませんでした。
+          一つのみかんが私たちの口に入るまでに、どれだけの手間と経験、そして想いが込められているのかを、体で知る時間だったと思います。
+        </p>
+        <p>
+          急斜面で流した汗、終わりの見えない手作業、迷いのない選別。
+          その積み重ねの先にある味を、ただ「甘いみかん」としてではなく、きちんと伝えたい。そう思うようになりました。
+        </p>
+        <p>
+          今回開催する<strong>こたつファームさんのみかんフェア</strong>は、そんな体験の延長にあります。畑で見て、触れて、食べて、体で知ったからこそ、自信を持っておすすめできるみかんです。
+          プロの現場で積み重ねられた手間と想いを、そのまま味わってもらえたら嬉しいです。
+        </p>
+      </section>
+
+      <section class="card" id="info">
+        <h2>フェア情報（ここを書き換えて使ってください）</h2>
+        <ul class="list">
+          <li><strong>期間：</strong>（例）2026/1/5〜2026/1/31</li>
+          <li><strong>提供店舗：</strong>（例）吉祥寺本店／マルシェ</li>
+          <li><strong>内容：</strong>（例）みかんパフェ、フローズンヨーグルト、みかんトッピング など</li>
+          <li><strong>価格：</strong>（例）パフェ 1,200円〜</li>
+          <li><strong>備考：</strong>（例）仕入れ状況により終了が早まる場合があります</li>
+        </ul>
+        <p class="note">
+          ※ホームページに載せる際は、上の項目を確定情報に差し替えてください。
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© Woodberry’s / Mikan Fair Page</div>
+      <div class="note">このHTMLは1ファイルで完結しています。画像（mikan_fair.jpg）だけ同じフォルダに置くか、URL指定にしてください。</div>
+    </div>
+  </footer>
+</body>
+</html>
